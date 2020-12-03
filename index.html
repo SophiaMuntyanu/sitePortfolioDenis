@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Денис Новик</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <!--ajax button up-->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <!--translate-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+  <script src="js/google-translate.js"></script>
+  <script src="//translate.google.com/translate_a/element.js?cb=TranslateInit"></script>
+  <script type="text/javascript">
+ 
+$(function() {
+ 
+$(window).scroll(function() {
+ 
+if($(this).scrollTop() != 0) {
+ 
+$('#toTop').fadeIn();
+ 
+} else {
+ 
+$('#toTop').fadeOut();
+ 
+}
+ 
+});
+ 
+$('#toTop').click(function() {
+ 
+$('body,html').animate({scrollTop:0},800);
+ 
+});
+ 
+});
+ 
+</script>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+    <nav class="navbar navbar-expand-md navbar-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="menu-box navbar-nav w-100 d-flex justify-content-between mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#aboutMe">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacts">Contacts</a>
+          </li>
+          <li class="nav-item language-menu">
+            <div class="language">
+            <img src="img/portugal-flag-194-p.jpg" width="32" height="24" alt="pt" data-google-lang="pt" class="language__img">
+            <img src="img/ingiltere-bayrağı-png-1.png" width="32" height="24" alt="en" data-google-lang="en" class="language__img">
+            <img src="img/german-flag.jpg" width="32" height="24" alt="de" data-google-lang="de" class="language__img">
+            <img src="img/istockphoto-1208665340-170667a.jpg" width="32" height="24" alt="fr" data-google-lang="fr" class="language__img">
+            <img src="img/russia-flag-small.png" width="32" height="24" alt="ru" data-google-lang="ru" class="language__img">
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    </header>
+  </div>
+    <main id="home">
+      <div class="container container-my-self">
+      <section class="my-self">
+        <div class="box-flex">
+          <div class="my-self__name">Denis<br>Novik</div>
+          <div class="designer-box my-self__profision">UX | UI designer<br>4 years old, Minsk</div>
+          <div class="language-box">
+            <img src="img/portugal-flag-194-p.jpg" width="32" height="24" alt="pt" data-google-lang="pt" class="language__img">
+            <img src="img/ingiltere-bayrağı-png-1.png" width="32" height="24" alt="en" data-google-lang="en" class="language__img">
+            <img src="img/german-flag.jpg" width="32" height="24" alt="de" data-google-lang="de" class="language__img">
+            <img src="img/istockphoto-1208665340-170667a.jpg" width="32" height="24" alt="fr" data-google-lang="fr" class="language__img">
+            <img src="img/russia-flag-small.png" width="32" height="24" alt="ru" data-google-lang="ru" class="language__img">
+          </div>
+        </div>
+        <div class="row img-denis">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <img src="img/BSPP2266.png" alt="личный блог" class="img-lg responsive">
+            <img src="img/BSPP2266.jpg" alt="личный блог" class="img-sm responsive">
+          </div>
+        </div>
+      </section>
+      </div>
+     <div ID = "toTop" class="button-up"> <svg class="icon-up">
+      <use xlink:href="img/image.svg#up"></use>
+    </svg> </div>
+      <section class="about-me">
+        <div class="about-me__iformation">
+          <h2 id="aboutMe" class="information__title">About me</h2>
+          <p class="information__description">Hi, I'm Denis – UX/UI designer from Minsk.<br>
+            I'm interested in design and everything connected with it.<br><br>
+             I'm studying at courses "Web and mobile design <br>
+            interfaces" in IT-Academy.<br><br>
+             Ready to implement excellent projects<br>
+            with wonderful people.</p>
+        </div>
+      </section>
+      <div class="container">
+        <section id="skills" class="scills">
+          <h2 class="scills__title">Skills</h2>
+          <p class="scills__description">
+            I work in such programs as
+          </p>
+          <div class=" scills-list card-deck row">
+            <div class="col-sm-12 col-md-6 col-lg-3 col-card">
+            <div class="card card-1" width = "16rem;">
+              <div class="box-svg">
+               <svg width="89" height ="88" class="icon-AdobePhotoshop">
+                 <use xlink:href="img/image.svg#AdobePhotoshop" ></use>
+               </svg>
+               </div>
+               <div class="card-body">
+                  <p class="card-text">Adobe<br> Photoshop</p>
+                  <div class="raiting-stars">
+                     <div class="raiting-stars__element"><svg width="26.07" height ="26" class="icon-star-black"><use xlink:href="img/image.svg#Star-black"></use></svg></div>
+                     <div class="raiting-stars__element"><svg width="26.07" height ="26" class="icon-star-black"><use xlink:href="img/image.svg#Star-black"></use></svg></div>
+                     <div class="raiting-stars__element"><svg width="26.07" height ="26" class="icon-star-black"><use xlink:href="img/image.svg#Star-black"></use></svg></div>
+                     <div class="raiting-stars__element"><svg width="26.07" height ="26" class="icon-star-black"><use xlink:href="img/image.svg#Star-black"></use></svg></div>
+                     <div class="raiting-stars__element"><svg width="26.07" height ="26" class="icon-star-white"><use xlink:href="img/image.svg#Star-white"></use></svg></div>
+                  </div>
+               </div>
+            </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-3 col-card">
+            <div class="card" width = "16rem;">
+              <div class="box-svg">
+               <svg width="89" height ="88" class="icon-illustrator">
+                   <use xlink:href="img/image.svg#illustrator"></use>
+               </svg>
+               </div>
+               <div class="card-body">
+                  <p class="card-text">Adobe<br> Illustrator</p>
+                  <div class="raiting-stars">
+                     <div class="raiting-stars__element"><svg width="26.07" height ="26" class="icon-star-black"><use xlink:href="img/image.svg#Star-black"></use></svg></div>
+                     <div class="raiting-stars__element"><svg width="26.07" height ="26" class="icon-star-black"><use xlink:href="img/image.svg#Star-black"></use></svg></div>
+                     <div class="raiting-stars__element"><svg width="26.07" height ="26" class="icon-star-black"><use xlink:href="img/image.svg#Star-black"></use></svg></div>
+                     <div class="raiting-stars__element"><svg width="26.07" height ="26" class="icon-star-white"><use xlink:href="img/image.svg#Star-black"></use></svg></div>
+                     <div class="raiting-stars__element"><svg width="26.07" height ="26" class="icon-star-white"><use xlink:href="img/image.svg#Star-white"></use></svg></div>
+                  </div>
+               </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-12 col-md-6 col-lg-3 col-card">
+            <div class="card " width = "16rem;">
+              <div class="box-svg">
+               <svg width="89" height ="88" class="icon-AfterEffects">
+                   <use xlink:href="img/image.svg#AfterEffects"></use>
+               </svg>
+               </div>
+               <div class="card-body">
+                  <p class="card-text">Adobe<br>After Effects</p>
+                  <div class="raiting-stars">
+                     <div class="raiting-stars__element"><svg width="26.07" height ="26" class="icon-star-black"><use xlink:href="img/image.svg#Star-black"></use></svg></div>
+                     <div class="raiting-stars__element"><svg width="26.07" height ="26" class="icon-star-black"><use xlink:href="img/image.svg#Star-black"></use></svg></div>
+                     <div class="raiting-stars__element"><svg width="26.07" height ="26" class="icon-star-black"><use xlink:href="img/image.svg#Star-black"></use></svg></div>
+                     <div class="raiting-stars__element"><svg width="26.07" height ="26" class="icon-star-black"><use xlink:href="img/image.svg#Star-black"></use></svg></div>
+                     <div class="raiting-stars__element"><svg width="26.07" height ="26" class="icon-star-white"><use xlink:href="img/image.svg#Star-white"></use></svg></div>
+                  </div>
+               </div>
+            </div>
+          </div>  
+          
+          <div class="col-sm-12 col-md-6 col-lg-3 col-card">
+            <div class="card" width = "16rem;">
+              <div class="box-svg">
+               <svg width="89" height ="88" class="icon-figma">
+                   <use xlink:href="img/image.svg#figma"></use>
+               </svg>
+               </div>
+               <div class="card-body">
+                  <p class="card-text">Figma<br><br></p>
+                  <div class="raiting-stars">
+                     <div class="raiting-stars__element"><svg width="26.07" height ="26" class="icon-star-black"><use xlink:href="img/image.svg#Star-black"></use></svg></div>
+                     <div class="raiting-stars__element"><svg width="26.07" height ="26" class="icon-star-black"><use xlink:href="img/image.svg#Star-black"></use></svg></div>
+                     <div class="raiting-stars__element"><svg width="26.07" height ="26" class="icon-star-black"><use xlink:href="img/image.svg#Star-black"></use></svg></div>
+                     <div class="raiting-stars__element"><svg width="26.07" height ="26" class="icon-star-black"><use xlink:href="img/image.svg#Star-black"></use></svg></div>
+                     <div class="raiting-stars__element"><svg width="26.07" height ="26" class="icon-star-white"><use xlink:href="img/image.svg#Star-white"></use></svg></div>
+                  </div>
+               </div>
+            </div>
+          </div>
+        </div>
+        </section>
+      </div>
+      <section class="portfolio">
+        <div class="container">
+          <h2 id="portfolio" class="portfolio-title">Portfolio</h2>
+          <div class="row img-portfolio img-levis">
+          <div class="col-lg-12 col-md-12 col-sm-12 portfolio-content">
+            <img src="img/levi's.png" alt="levi's" class="responsive">
+          </div>
+        </div>
+        <a href="" class="portfolio-link">Online fashion store - Homepage</a>
+        
+        <div class="row img-portfolio">
+          <div class="col-lg-12 col-md-12 col-sm-12 portfolio-content">
+            <img src="img/reebok_web.png" alt="reebok" class="responsive">
+          </div>
+        </div>
+        <a href="" class="portfolio-link">Reebok Store - Concept</a>
+
+        <div class="row img-portfolio">
+          <div class="col-lg-12 col-md-12 col-sm-12 portfolio-content">
+            <img src="img/braun.png" alt="braun" class="responsive">
+          </div>
+        </div>
+        <a href="" class="portfolio-link">Braun Landing Page - Concept</a>
+        </div>
+      </section>
+    </main>
+    <footer id="contacts" class="contacts">
+      <div class="container">
+        <div class="container-flex">
+           <h2 class="contacts-title">Contacts</h2>
+        <p class="contacts-description">Want to know more or just chat?<br> You are welcome!</p>
+        <button class="contacts-btn">
+          <span class="contacts-btn__span">Send message</span>
+        </button>
+            <div class="contacts__menu">
+                <a class="contacts__menu-link" href="#"><svg width="40" height ="40" class="contacts__menu-icon"><use xlink:href="img/image.svg#in"></use></svg></a>
+                <a class="contacts__menu-link" href="#"><svg width="40" height ="40" class="contacts__menu-icon"><use xlink:href="img/image.svg#inst"></use></svg></a>
+                <a class="contacts__menu-link" href="#"><svg width="40" height ="40" class="contacts__menu-icon"><use xlink:href="img/image.svg#behance"></use></svg></a>
+                <a class="contacts__menu-link contacts__menu-link-margin" href="#"><svg width="40" height ="40" class="contacts__menu-icon"><use xlink:href="img/image.svg#surface"></use></svg></a>
+            </div>
+            <p class="contacts-description-footer">Like me on <br> LinkedIn, Instagram, Behance, Dribble</p>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
